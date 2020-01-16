@@ -1,0 +1,191 @@
+
+*{
+	padding: 0;
+	margin: 0;
+	outline: 0;
+}
+ul,ol{
+	list-style: none;
+}
+a,a:hover{
+	text-decoration: none;
+}
+img{
+	vertical-align: center;
+}
+h1,h2,h3,h4,h5,h6,p,a,img,ul,ol,li{
+	padding: 0;
+	margin: 0;
+}
+.pre-loader{
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 99999;
+	background: #fff;
+}
+.pre-loader .loader{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding: 10px;
+	background: #54D154;
+	border-radius: 50%;
+	animation: loader 1s infinite;
+}
+.nav-btn-prev, .nav-btn-next{
+	position: absolute;
+	top: 38%;
+	color: #fff;
+	background: rgba(122,122,122,.5);
+	font-size: 21px;
+}
+.nav-btn-prev:hover, .nav-btn-next:hover{
+	background: rgba(122,122,122,1);
+}
+.nav-btn-next{
+	right: 0;
+	padding: 20px 10px 20px 20px;
+	border-radius: 10px 0px 0px 10px;
+}
+.nav-btn-prev{
+	left: 0;
+	padding: 20px 20px 20px 10px;
+	border-radius: 0px 10px 10px 0px;
+}
+.owl-dots{
+	margin-top: -10px !important;
+}
+.common-heading h2{
+	font-size: 32px;
+}
+.common-heading .divider{
+	height: 5px;
+	width: 5%;
+	background: #000;
+	margin: 10px auto;
+}
+/*Common CSS*/
+
+.navbar-brand img{
+	width: 84px;
+}
+.header h1{
+	font-size: 64px;
+}
+.header p{
+	font-size: 32px;
+}
+.user-view{
+	display: none;
+}
+.header .user-view{
+	padding-top: 50px;
+}
+.btn-custom{
+	border: 1px solid #17a2b8;
+}
+.btn-custom:hover{
+	box-shadow: 0px 0px 30px #17a2b8;
+	color: #fff;
+	background: #17a2b8;
+}
+.navbar .active .nav-link{
+	color: #74D8F3!important;
+}
+.nav-item .nav-link{
+	font-size: 21px;
+	color: #fff!important;
+	transition: all linear .2s;
+}
+.nav-item .nav-link{
+	position: relative;
+}
+.nav-item .nav-link:hover{
+	color: #6398FF!important;
+}
+.nav-item .nav-link:before{
+	position: absolute;
+	content: "";
+	bottom: 0;
+	left: 0;
+	width: 0%;
+	height: 2px;
+	background: #6398FF;
+	transition: all linear .2s;
+}
+.nav-item .nav-link:hover:before{
+	width: 100%;
+}
+
+.slider{
+	background: url(../images/wood-bg.jpg);
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.slider .feature-image{
+	position: relative;
+	height: 650px;
+	overflow: hidden;
+}
+
+/*Top pick section*/
+.pick-item{
+	margin-bottom: 50px;
+}
+.pick-title p{
+	font-size: 20px;
+	font-weight: 700;
+	padding: 5px 0 10px 0;
+}
+/*Top pick section*/
+
+/*top traveller*/
+.top-traveller{
+	background: #6B9B89;
+}
+/*top traveller*/
+
+/*footer*/
+footer{
+	background: #808080;
+	padding: 30px 0;
+}
+footer .btn-sub{
+	font-size: 42px;
+	color: #fff;
+	margin: 0 auto;
+}
+
+/*footer*/
+
+
+
+/*content image*/
+.cimage{
+	width: 50%;
+}
+.content-p{
+	padding: 10px;
+}
+.main-content{
+	margin: 100px 0 100px 0;
+	background: #fff;
+	padding: 10px;
+}
+.message{
+	padding-bottom: 80px;
+}
+
+
+@keyframes loader{
+	from{
+		padding: 10px;
+		opacity: 1;
+	}
+	to{
+		padding: 60px;
+		opacity: 0;
+	}
+}

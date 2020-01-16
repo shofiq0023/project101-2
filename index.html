@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Around The World!</title>
+	<link rel="icon" href="assets/images/logo.png">
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Bootstrap, fontawesome, custom, responsive css -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body>
+	<div class="pre-loader">
+		<div class="loader"></div>
+	</div>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+		<div class="container">
+			<a class="navbar-brand" href="#"><img src="assets/images/brand.png" alt="brand image" class="img-fluid"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto mx-5">
+			    	<li class="nav-item active">
+			    		<a class="nav-link" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Top Picks!</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Top Travellers!</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contact Us!</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="header">
+		<div class="user">
+			<div class="container">
+				<h2 class="display-1">Enter Your Name</h2>
+				<form id="frm">
+					<input type="text" name="name" class="form-control" style="width: 50%;">
+				</form>
+				<button onclick="getInput()" class="done btn btn-custom my-3 px-4">Done</button>
+			</div>
+		</div>
+		<div class="container">
+			<div class="user-view text-center">
+				<h1>Welcome <span id="view"></span></h1>
+				<p>Let's Explore the world through the eyes of our website</p>
+				<a href="home.html" class="btn btn-custom px-4 py-2 my-3">Let's Go!</a>
+			</div>
+		</div>
+	</div>
+
+
+
+<!-- Optional JavaScript -->
+<script src="assets/js/jquery-3.4.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/custom.js"></script>
+<script>
+	function getInput(){
+		var a=document.getElementById("frm");
+		var text="";
+		var i;
+		for (i=0; i< a.length; i++){
+			text += a.elements[i].value;
+		}
+		document.getElementById("view").innerHTML=text;
+	}
+	$(".done").click(function(){
+		$(".user-view").fadeIn(1000);
+		$(".user").hide();
+	});
+</script>
+</body>
+</html>
